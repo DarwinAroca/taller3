@@ -61,12 +61,22 @@ public class Propietario {
 }
 
     public void agregarMascota(Mascota m) {
-        mascotas.add(m);
-    }
+        if (m != null) {
+            mascotas.add(m);
+ }}
+        //Método para mostrar la información completa
+        public void mostrarInformacionCompleta() {
+            System.out.println("===== FICHA CLÍNICA =====");
+            System.out.println("Propietario: " + nombre);
+            System.out.println("Documento: " + documento);
+            System.out.println("Numero de Telefono: " + telefono);
+            System.out.println();
 
-    public void mostrarMascotas() {
-        for (Mascota m : mascotas) {
-            m.mostrarInfo();
-        }
-    }
+            for (Mascota m : mascotas) {
+                m.mostrarHistorial();
+ }
 }
+
+
+ }
+

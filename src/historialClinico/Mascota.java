@@ -16,7 +16,15 @@ public class Mascota {
         setEdad(edad);
         this.historial = new Historial();
     }
+    public void agregarConsulta(Consulta consulta) {
+        historial.agregarConsulta(consulta);
+    }
 
+    public void mostrarHistorial() {
+        System.out.println("Mascota: " + nombre + " | Especie: " + especie + " | Edad: " + edad + " años");
+        System.out.println("Historial:");
+        historial.mostrarConsultas();
+}
     // Getter para nombre
     public String getNombre() {
         return nombre;
@@ -60,3 +68,4 @@ public class Mascota {
 
     }
 }
+

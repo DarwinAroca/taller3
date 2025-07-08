@@ -12,10 +12,10 @@ import java.util.Scanner;
             String nombreProp = sc.nextLine();
 
             System.out.print("Documento: ");
-            int documento = sc.nextInt();
+            String documento = sc.nextLine();
 
             System.out.print("Teléfono: ");
-            int telefono = sc.nextInt();
+            String telefono = sc.nextLine();
 
             Propietario propietario = new Propietario(nombreProp, documento, telefono);
 
@@ -67,10 +67,8 @@ import java.util.Scanner;
             }
 
             // Mostrar resultados
-            System.out.println("\n===== FICHA CLÍNICA COMPLETA =====");
-            propietario.mostrarInfo();
+            System.out.println("FICHA CLÍNICA");
             propietario.mostrarMascotas();
-
             sc.close();
         }
     }

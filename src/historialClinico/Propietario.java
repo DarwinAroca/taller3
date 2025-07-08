@@ -64,9 +64,7 @@ public class Propietario {
         if (m != null) {
             mascotas.add(m);
  }}
-        //Método para mostrar la información completa
-        public void mostrarInformacionCompleta() {
-            System.out.println("===== FICHA CLÍNICA =====");
+        public void mostrarMascotas() {
             System.out.println("Propietario: " + nombre);
             System.out.println("Documento: " + documento);
             System.out.println("Numero de Telefono: " + telefono);

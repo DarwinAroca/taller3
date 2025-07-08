@@ -1,14 +1,20 @@
 package historialClinico;
+
 public class Mascota {
     private String nombre;
     private String especie;
     private int edad;
-
+    private Historial historial;
     // Constructor
     public Mascota(String nombre, String especie, int edad) {
-        this.nombre = nombre;
-        this.especie = especie;
-        this.edad = edad;
+        //*this.nombre = nombre;
+        //this.especie = especie;
+        //this.edad = edad;
+        //Usar setters y historial
+        setNombre(nombre);
+        setEspecie(especie);
+        setEdad(edad);
+        this.historial = new Historial();
     }
 
     // Getter para nombre
@@ -45,9 +51,12 @@ public class Mascota {
         }
     }
 
-    public void mostrarInformacion() {
+    public void mostrarInfo() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Especie: " + especie);
         System.out.println("Edad: " + edad);
+    }
+    public void agregarconsulta(Consulta consulta){
+
     }
 }
